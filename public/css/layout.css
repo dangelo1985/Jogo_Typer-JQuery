@@ -1,0 +1,17 @@
+body{
+	background-color: black;
+}
+h1{
+	color: #FFD700;
+}
+
+table{
+	border: 1;
+	color: white;
+}
+.table-header{
+	color: yellow;
+}
+.btn:hover{
+	width: 10%;
+}

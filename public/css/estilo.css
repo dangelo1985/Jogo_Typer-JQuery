@@ -1,0 +1,60 @@
+body{
+	overflow: scroll;
+	background-image: url("/img/fundo.jpg");
+	-webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+h1{
+	color: #DF696E;
+}
+.campo-digitacao{
+	font-size: 20px;
+	height: 100px;
+}
+.texto{
+	font-size: 15px;
+}
+.campoDesativado{
+	background-color: lightgray;
+}
+.icone{
+	vertical-align: middle;
+}
+.borda-verde{
+	border: 5px solid green; 
+}
+.borda-vermelha{
+	border: 5px solid red;
+}
+.placar{
+	display: none;
+}
+#erro{
+	color: red;
+	display: none;
+}
+#spinner{
+	display: none;
+}
+#frase-id{
+	width: 40px;
+}
+#botao-sync{
+	float: right;
+}
+.select-usuarios{
+	display: inline-block;;
+}
+#usuarios{
+	display: block;
+}
+.selectize-input{
+	width: 150px;
+	vertical-align: middle;
+}
+.botao-remover{
+	color: #F44336;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/google-fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/selectize.default.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<title>Jogo Typer</title>
+	
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1 class="center">
+			<i class="large material-icons icone">videogame_asset</i>
+		Typer</h1>
+		<p class="texto center frase">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Casamentiss faiz malandris se pirulitá. Interagi no mé, cursus quis, vehicula ac nisi. Sapien in monti palavris qui num significa nadis i pareci latim.</p>
+
+		<div class="center">
+			<img src="img/spinner.gif" id="spinner">
+			<p id="erro">
+				<i class="material-icons icone">sync_problem</i>
+				Ocorreu um erro, por favor tente novamente!
+			</p>
+		</div>
+		<ul class="cont center">
+			<li>
+				<i class="material-icons icone">description</i>
+				<span id="quantidade">5</span> Palavras
+			</li>
+
+			<li>
+				<i class="material-icons icone">access_time</i>
+				<span id="tempo-digitacao">60</span> Segundos
+			</li>
+		</ul>
+
+		<textarea class="tooltip campo-digitacao" rows="8" cols="40"
+			title="Clique Aqui para Iniciar o Jogo">
+		</textarea>
+
+		<div class="botoes">
+			<a class="tooltip btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar" 
+			title="Reiniciar Jogo">
+				<i class="material-icons">cached</i>
+			</a>
+
+			<a class="tooltip btn-floating btn-large waves-effect waves-light green" id="botao-placar" 
+			title="Placar">
+				<i class="material-icons">assignment</i>
+			</a>
+
+			<a class="tooltip btn-floating btn-large waves-effect waves-light blue" id="botao-frase" 
+			title="Trocar Frase Aleatoria">
+				<i class="material-icons">shuffle</i>
+			</a>
+
+			<a class="tooltip btn-floating btn-large waves-effect waves-light cyan" id="botao-frase-id"  
+			title="Buscar Frase">
+				<i class="material-icons">search</i>
+			</a>
+			<input type="number" id="frase-id" min="0">
+
+			<div class="tooltip select-usuarios" title="Escreva seu Nome">
+				<select id="usuarios">
+				</select>
+			</div>
+
+			<a class="tooltip btn-floating btn-large waves-effect waves-light orange" id="botao-sync" title="Salvar">
+				<i class="material-icons">swap_vert</i>
+			</a>
+		</div>
+		
+
+		<ul class="center">
+			<li><span class="contador-caracteres">0</span> Caracteres</li>
+			<li><span class="contador-palavras">0</span> Palavras</li>
+		</ul>
+
+		<section class="placar">
+			<h3 class="center">Placar</h3>
+			<table class="centered borded">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Numero de Palavras</th>
+						<th>Numero de Letras</th>
+						<th>Excluir Linha</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</section>
+
+	</div>
+	     <footer class="page-footer" >
+	           <div class="center footer-copyright">
+	       	   		© 2018 Copyright Desenvolvido por Rafael M. D'Angelo
+	           </div>
+        </footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/placar.js"></script>
+	<script type="text/javascript" src="js/frase.js"></script>
+	<script type="text/javascript" src="js/selectize.js"></script>
+	<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+</body>
+</html>
